@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{d81f436d-46d6-451d-a17c-21ae4c3d239e}"
+       Name="OrientationStage"
+       Title="OrientationStage"
+       DisplayName="Orientation Stage"
+       Group="Employee Orientation"
+       Description="The current orientation stage of the employee."
+       Type="Choice"
+       Required ="TRUE"
+       JSLink="~site/Scripts/OrientationStageRendering.js">
+    <CHOICES>
+      <CHOICE>Not Started</CHOICE>
+      <CHOICE>Tour of building</CHOICE>
+      <CHOICE>HR paperwork</CHOICE>
+      <CHOICE>Corporate network access</CHOICE>
+      <CHOICE>Completed</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="1">Not Started</MAPPING>
+      <MAPPING Value="2">Tour of building</MAPPING>
+      <MAPPING Value="3">HR paperwork</MAPPING>
+      <MAPPING Value="4">Corp network access</MAPPING>
+      <MAPPING Value="5">Completed</MAPPING>
+    </MAPPINGS>
+    <Default>Not Started</Default>
+  </Field>
+</Elements>
